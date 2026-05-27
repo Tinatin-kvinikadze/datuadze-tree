@@ -1,163 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datuadze Family Heritage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- ========== NAVIGATION ========== -->
     <nav id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-tree"></i>
-                <span>Datuadze Heritage</span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#family-tree">Family Tree</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-tree"></i>
+          <span>Datuadze Heritage</span>
         </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#family-tree">Family Tree</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </nav>
 
     <!-- ========== HERO ========== -->
     <section id="home">
-        <div class="hero-bg-pattern"></div>
-        <div class="hero-content">
-            <div class="hero-icon"><i class="fas fa-tree"></i></div>
-            <p class="hero-subtitle">Celebrating the roots of</p>
-            <h1>The Datuadze Family</h1>
-            <p class="hero-tagline">Our history, our heritage, our legacy</p>
-            <a href="#family-tree" class="hero-btn">
-                <i class="fas fa-leaf"></i> Explore Our Family Tree
-            </a>
-        </div>
-        <a href="#family-tree" class="scroll-indicator" aria-label="Scroll down">
-            <i class="fas fa-chevron-down"></i>
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-content">
+        <div class="hero-icon"><i class="fas fa-tree"></i></div>
+        <p class="hero-subtitle">Celebrating the roots of</p>
+        <h1>The Datuadze Family</h1>
+        <p class="hero-tagline">Our history, our heritage, our legacy</p>
+        <a href="#family-tree" class="hero-btn">
+          <i class="fas fa-leaf"></i> Explore Our Family Tree
         </a>
+      </div>
+      <a href="#family-tree" class="scroll-indicator" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </section>
 
     <!-- ========== FAMILY TREE ========== -->
     <section id="family-tree">
-        <div class="section-header">
-            <h2>Family Tree</h2>
-            <p>Generations of the Datuadze family — their lives, professions, and legacy</p>
-        </div>
+      <div class="section-header">
+        <h2>Family Tree</h2>
+        <p>
+          Generations of the Datuadze family — their lives, professions, and
+          legacy
+        </p>
+      </div>
 
-        <!-- Generation legend -->
-        <div class="tree-legend">
-            <span><i class="fas fa-circle" style="color:#8B6914"></i> Great-Grandparents</span>
-            <span><i class="fas fa-circle" style="color:#2D5016"></i> Grandparents</span>
-            <span><i class="fas fa-circle" style="color:#5C8A3C"></i> Parents</span>
-            <span><i class="fas fa-circle" style="color:#C4972B"></i> My Generation</span>
-            <span class="legend-hint"><i class="fas fa-hand-pointer"></i> Click any person for details</span>
-        </div>
+      <!-- Generation legend -->
+      <div class="tree-legend">
+        <span
+          ><i class="fas fa-circle" style="color: #8b6914"></i>
+          Great-Grandparents</span
+        >
+        <span
+          ><i class="fas fa-circle" style="color: #2d5016"></i>
+          Grandparents</span
+        >
+        <span
+          ><i class="fas fa-circle" style="color: #5c8a3c"></i> Parents</span
+        >
+        <span
+          ><i class="fas fa-circle" style="color: #c4972b"></i> My
+          Generation</span
+        >
+        <span class="legend-hint"
+          ><i class="fas fa-hand-pointer"></i> Click any person for
+          details</span
+        >
+      </div>
 
-        <!-- Scrollable tree canvas -->
-        <div class="tree-scroll-wrapper">
-            <div id="tree-canvas">
-                <!-- SVG lines + nodes injected by script.js -->
-            </div>
+      <!-- Scrollable tree canvas -->
+      <div class="tree-scroll-wrapper">
+        <div id="tree-canvas">
+          <!-- SVG lines + nodes injected by script.js -->
         </div>
+      </div>
     </section>
 
     <!-- Member detail popup -->
     <div class="popup-overlay" id="popup-overlay"></div>
     <div class="member-popup" id="member-popup" role="dialog" aria-modal="true">
-        <button class="popup-close" id="popup-close" aria-label="Close"><i class="fas fa-times"></i></button>
-        <div class="popup-avatar" id="popup-avatar"></div>
-        <div class="popup-gen-label" id="popup-gen-label"></div>
-        <div class="popup-name" id="popup-name"></div>
-        <div class="popup-years" id="popup-years"></div>
-        <div class="popup-relation" id="popup-relation"></div>
-        <div class="popup-profession" id="popup-profession"></div>
-        <p class="popup-bio" id="popup-bio"></p>
+      <button class="popup-close" id="popup-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="popup-avatar" id="popup-avatar"></div>
+      <div class="popup-gen-label" id="popup-gen-label"></div>
+      <div class="popup-name" id="popup-name"></div>
+      <div class="popup-years" id="popup-years"></div>
+      <div class="popup-relation" id="popup-relation"></div>
+      <div class="popup-profession" id="popup-profession"></div>
+      <p class="popup-bio" id="popup-bio"></p>
     </div>
 
     <!-- ========== GALLERY ========== -->
     <section id="gallery">
-        <div class="section-header light">
-            <h2>Family Gallery</h2>
-            <p>Memories and moments across the generations</p>
-        </div>
+      <div class="section-header light">
+        <h2>Family Gallery</h2>
+        <p>Memories and moments across the generations</p>
+      </div>
 
-        <div class="gallery-grid" id="gallery-grid">
-            <div class="gallery-item" data-caption="Family gathering, circa 1960">
-                <img src="images/photo1.jpg" alt="Family gathering" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
-            <div class="gallery-item" data-caption="Grandparents' wedding day">
-                <img src="images/photo2.jpg" alt="Grandparents wedding" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
-            <div class="gallery-item" data-caption="Family home in Georgia">
-                <img src="images/photo3.jpg" alt="Family home" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
-            <div class="gallery-item" data-caption="Parents' anniversary">
-                <img src="images/photo4.jpg" alt="Parents anniversary" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
-            <div class="gallery-item" data-caption="Summer family reunion">
-                <img src="images/photo5.jpg" alt="Family reunion" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
-            <div class="gallery-item" data-caption="A cherished family portrait">
-                <img src="images/photo6.jpg" alt="Family portrait" onerror="this.parentElement.classList.add('no-img')">
-                <div class="gallery-placeholder"><i class="fas fa-image"></i><span>Add Photo</span></div>
-            </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" data-caption="Family gathering, circa 1960">
+          <img
+            src="images/photo1.jpg"
+            alt="Family gathering"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
         </div>
+        <div class="gallery-item" data-caption="Grandparents' wedding day">
+          <img
+            src="images/photo2.jpg"
+            alt="Grandparents wedding"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Family home in Georgia">
+          <img
+            src="images/photo3.jpg"
+            alt="Family home"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Parents' anniversary">
+          <img
+            src="images/photo4.jpg"
+            alt="Parents anniversary"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="Summer family reunion">
+          <img
+            src="images/photo5.jpg"
+            alt="Family reunion"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-caption="A cherished family portrait">
+          <img
+            src="images/photo6.jpg"
+            alt="Family portrait"
+            onerror="this.parentElement.classList.add('no-img')"
+          />
+          <div class="gallery-placeholder">
+            <i class="fas fa-image"></i><span>Add Photo</span>
+          </div>
+        </div>
+      </div>
 
-        <p class="gallery-note">
-            <i class="fas fa-info-circle"></i>
-            To add real photos: place image files in the <code>images/</code> folder named <code>photo1.jpg</code>, <code>photo2.jpg</code>, etc.
-        </p>
+      <p class="gallery-note">
+        <i class="fas fa-info-circle"></i>
+        To add real photos: place image files in the <code>images/</code> folder
+        named <code>photo1.jpg</code>, <code>photo2.jpg</code>, etc.
+      </p>
     </section>
-
 
     <!-- ========== FOOTER ========== -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-tree"></i>
-                <span>Datuadze Heritage</span>
-            </div>
-            <p class="footer-tagline">Preserving the past &middot; Honoring the present &middot; Inspiring the future</p>
-            <nav class="footer-links" aria-label="Footer navigation">
-                <a href="#home">Home</a>
-                <a href="#family-tree">Family Tree</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <p class="footer-copy">&copy; 2025 Datuadze Family Heritage. Made with <i class="fas fa-heart" style="color:#C4972B"></i> to honor our roots.</p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-tree"></i>
+          <span>Datuadze Heritage</span>
         </div>
+        <p class="footer-tagline">
+          Preserving the past &middot; Honoring the present &middot; Inspiring
+          the future
+        </p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#family-tree">Family Tree</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2025 Datuadze Family Heritage. Made with
+          <i class="fas fa-heart" style="color: #c4972b"></i> to honor our
+          roots.
+        </p>
+      </div>
     </footer>
 
     <!-- ========== LIGHTBOX ========== -->
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox">
-        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="lightbox-content">
-            <img src="" alt="" id="lightbox-img" style="display:none;">
-            <div class="lightbox-placeholder-img" id="lightbox-placeholder">
-                <i class="fas fa-image"></i>
-            </div>
-            <p class="lightbox-caption" id="lightbox-caption"></p>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo lightbox"
+    >
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+        aria-label="Close lightbox"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" style="display: none" />
+        <div class="lightbox-placeholder-img" id="lightbox-placeholder">
+          <i class="fas fa-image"></i>
         </div>
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
