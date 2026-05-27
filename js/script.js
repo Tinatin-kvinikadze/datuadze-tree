@@ -352,6 +352,17 @@ function initTreeDrag() {
         var x = e.pageX - wrapper.offsetLeft;
         wrapper.scrollLeft = scrollLeft - (x - startX) * 1.2;
     });
+
+    // Touch events for mobile swipe
+    var touchStartX = 0, touchScrollLeft = 0;
+    wrapper.addEventListener('touchstart', function(e) {
+        touchStartX    = e.touches[0].pageX;
+        touchScrollLeft = wrapper.scrollLeft;
+    }, { passive: true });
+    wrapper.addEventListener('touchmove', function(e) {
+        var dx = touchStartX - e.touches[0].pageX;
+        wrapper.scrollLeft = touchScrollLeft + dx;
+    }, { passive: true });
 }
 
 /* ============================================================
